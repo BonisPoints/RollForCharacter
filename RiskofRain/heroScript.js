@@ -4,7 +4,7 @@ function createHeroes(hero){
     return newHTML;
 }
 
-const heroes = ["Acrid", "Artificer", "Bandit", "Captain", "Commando", "Engineer", "Heretic", "Huntress", "Loader", "Mercenary", "MUL-T", "Railgunner", "Rex", "Void_Fiend"];
+const heroes = ["Acrid", "Artificer", "Bandit", "Captain", "CHEF", "Commando", "Engineer", "False_Son", "Heretic", "Huntress", "Loader", "Mercenary", "MUL-T", "Railgunner", "Rex", "Seeker", "Void_Fiend"];
 let html = '';
 
 for (var hero of heroes){

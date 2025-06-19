@@ -25,8 +25,8 @@ html{
 }
 
 img {
-    height: 250px;
-    width: 250px;
+    height: 180px;
+    width: 180px;
 }
 
 #characters{
@@ -34,6 +34,7 @@ img {
     flex-wrap: wrap;
     background: rgba(161, 0, 220, .5);
     border: solid black 5px;
+    justify-content: center;
 }
 
 select{
@@ -63,4 +64,5 @@ button {
     background-color: rgba(255, 255, 255, .3);
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
