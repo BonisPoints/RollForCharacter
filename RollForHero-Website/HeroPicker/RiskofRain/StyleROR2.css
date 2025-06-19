@@ -1,0 +1,59 @@
+@font-face {
+    font-family: RiskFont;
+    src: url(../Bombardier.otf);
+}
+
+html{
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: RiskFont;
+    font-size: x-large;
+}
+.hero {
+    border: solid 3px black;
+    border-radius: 5px;
+    padding: 2px 16px;
+    color: black;
+    margin: 1ch;
+    background-color: white;
+}
+
+#disabled {
+    filter: grayscale(100%);
+    color: red;
+}
+
+img {
+    height: 250px;
+    width: 250px;
+}
+
+#characters{
+    display: flex;
+    flex-wrap: wrap;
+    background: rgba(161, 0, 220, .5);
+    border: solid black 5px;
+}
+
+select{
+    font-family: RiskFont;
+    font-size: 5.5ch;
+    display: flex;
+    object-fit: cover;
+}
+
+button {
+    padding: 2ch 10ch;
+    background-color: yellow;
+    font-family: RiskFont;
+    font-size: x-large;
+}
+
+.selection {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
