@@ -1,15 +1,18 @@
+
 .menuBar{
     background-color: black;
-    width: 100%;
-    color: white;
-    margin: -10;
+    width: 100%; 
     padding: .5ch 5ch;
     float: left;
     overflow: hidden;
+    font-size: x-large;
+    
 }
 
 .menuBar a{
     padding-left: 5ch;
+    text-decoration: none;
+    color: white;
 }
 
 #home{

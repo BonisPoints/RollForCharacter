@@ -1,7 +1,15 @@
-const heroes = ["Acrid", "Artificer", "Bandit", "Captain", "Commando", "Engineer", "Heretic", "Huntress", "Loader", "Mercenary", "MUL-T", "Railgunner", "Rex", "Void_Fiend"];
-let html = "";
+function createHeroes(hero){
+    let newHTML = '';
+    newHTML += "<!--" + hero + "--> <div class='hero' id='enabled'> <img class='hero-icon' src='images/" + hero + ".webp' alt='" +  hero + "'> <h4 class='heroName'>" + hero + "</h4> </div>";
+    return newHTML;
+}
 
-heroes.forEach(createHeroes);
+const heroes = ["Acrid", "Artificer", "Bandit", "Captain", "Commando", "Engineer", "Heretic", "Huntress", "Loader", "Mercenary", "MUL-T", "Railgunner", "Rex", "Void_Fiend"];
+let html = '';
+
+for (var hero of heroes){
+    html += createHeroes(hero);
+}
 const characterContainer = document.getElementById("characters");
 characterContainer.insertAdjacentHTML("afterbegin", html);
 
@@ -11,7 +19,3 @@ document.querySelectorAll('.hero').forEach(item => {
         console.log(item.id);
     })
 })
-
-function createHeroes(hero){
-    html += "<!--" + hero + "--> <div class='hero' id='enabled'> <img class='hero-icon' src='images/" + hero + ".webp' alt='" +  hero + "'> <h4 class='heroName'>" + hero + "</h4> </div>";
-}

@@ -11,21 +11,23 @@
     <body>
         <header class="menuBar">
             <a id="home" href="../index.html">Home</a>
-            <a href="rivalsPicker.html">Marvel Rivals</a>
+            <a href="../MarvelRivals/rivalsPicker.html">Marvel Rivals</a>
             <a href="Ror2Picker.html">Risk Of Rain 2</a>
-    </header>
+        </header>
         <div id="characters"></div>
         <script src="heroScript.js"></script>
+        <script src="pickHeroes.js"></script>
         <div class="selection">
-            <select>
+            <select id= "amount">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
                 <option value="4">4</option>
             </select>
-            <button onclick="">PICK CHARACTER</button>
+            <button onclick="pickTheHeroes(document.getElementById('amount').value)">PICK CHARACTER</button>
         </div>
-        <p id="chosenCharacters"></p>
+        <div id="chosenCharacters"></div>
         
     </body>
+    
 </html>
